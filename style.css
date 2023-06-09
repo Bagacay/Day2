@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 1.5rem;
+}
+
+.container{
+    position: relative;
+    align-items: center;
+}
+
+.logo-btn{
+    color: black;
+    display: inline-block;
+    font-size: 5ch;
+    font-weight: bolder;
+}
+
+.nav-bar{
+    display: none;
+}
+
+.nav-bar ul li a{
+    color: black;
+}
+
+.hamburger-btn{
+    background: none;
+    border: none;
+    font-size: 45px;
+    position: absolute;   
+    right: 0;
+    top: 0; 
+}
+
+main img{
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 100%;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+}
+
+section p{
+    color: gray;
+    margin-bottom: 1.5rem;
+}
+
+.read-more{
+    border: none;
+    padding: 1rem 2rem;
+    background-color: #f15d51;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 4.5rem;
+}
+
+aside{
+    background-color: #00001a;
+    padding: 1.5rem;
+    margin-bottom: 4.5rem;
+}
+
+aside h2{
+    color: #e5aa53;
+    margin-bottom: 1.5rem;
+}
+
+aside h4{
+    color: #fdfef9;
+    margin: 1.5rem 0;
+}
+aside p{
+    color: #c4c5d5;
+    margin: 1.5rem 0;
+}
+
+.newsSection{
+    margin-bottom: 5rem;
+}
+
+[ class ^= "news-"]{
+    display: flex;
+    height: 25vh;
+    margin: 0 0 2rem 0 ;
+}
+
+.articles{
+    margin: 0 1.5rem;
+}
+
+article h3{
+    font-size: 1.75rem;
+    margin-bottom: .75rem;
+    color: #c3c4cd;
+
+}
+
+article h4{
+    font-size:1rem ;
+    margin-bottom: .75rem;
+}
+
+article p{
+    font-size: 1rem;
+
+}
+
+@media (min-width:480px){
+    html {
+        margin: auto;
+    }
+
+    body{
+        margin: 5rem 22.5vw;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+
+    }
+    .nav-bar{
+        display: block;
+        
+    }
+
+    .nav-bar ul{
+        display: flex;
+
+    }
+
+    .nav-bar ul li{
+        margin-left:1rem;   
+
+    }
+
+    .hamburger-btn{
+        display: none;
+    }
+
+    #main-img{
+        background-image: url('images/image-web-3-desktop.jpg');
+        height: 300px;
+        object-fit: fill;
+        margin: 0 1.5rem 2rem 0;
+    }
+
+    .bright-future{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bright-future h1{
+        margin: 0;
+    }
+
+    .sub{
+        margin-left: 5rem;
+    }
+
+    .read-more{
+        margin: 0;
+    }
+    
+    .hero-section{
+        display: flex;
+    }
+
+    #New{
+        margin-left: 1.5rem;
+    }
+
+    .newsSection{
+        display: flex;
+    }
+
+    .aside{
+        margin-bottom: 1.5rem ;
+  
+    }
+    .news-retro-pc img{
+        height: 20vh ;
+    }
+
+    .news-top-laptops img{
+        height: 20vh ;
+    }
+
+    .news-gaming-growth img{
+        height: 20vh ;
+    }
+
+    .articles{
+        height: 20vh ;
+    }
+}
